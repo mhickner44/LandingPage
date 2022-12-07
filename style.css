@@ -1,0 +1,62 @@
+body {
+  margin-left: 20%;
+  margin-right: 20%;
+}
+/**/
+.top  ,.section3Background{
+  margin-right: -33.3%;
+  margin-left:-33.3%;
+  background-color: #1f2937;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  margin:0 20%;/*to correct the margin from the body*/
+}
+
+.firstSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+}
+
+h3 {
+  text-align: center;
+}
+
+.imagesContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#seagulls {
+  width: 100px;
+  height: 100px;
+}
+
+.section3Background{
+ 
+background-color: #E5E7EB;
+
+}
+
+.section3{
+  margin:0 20%;
+}
+
+.section4{
+  display: flex;
+}
+
+footer{
+  text-align: center;
+  background-color: #1f2937;
+  margin-right: -33.3%;
+  margin-left:-33.3%;
+  color: white;
+}
