@@ -81,6 +81,7 @@ h3 {
   justify-content: center;
   align-items: center;
   margin-bottom: 10%;
+
 }
 
 .imagesContainer p {
@@ -132,7 +133,51 @@ h3 {
 
 .section4 {
   display: flex;
+  justify-content:space-between;
+  align-items: center;
+  padding-left: 10%;
+  padding-right: 10%;
+  background-color: #3882f6;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  margin:10% 0;
+  border-radius: 10px;
 }
+
+.callToAction{
+  text-align: left
+}
+
+
+#topText{
+  font-size: 24px;
+  font-weight: 600;
+  color: white;
+  margin: 0;
+  }
+  
+
+#bottomText{
+
+  color: white;
+  font-size: 18px;
+  margin: 0;
+ 
+
+}
+
+.buttonContainer button{
+  background-color: #3882f6;
+  color: white;
+  border-radius: 10px;
+  padding: 8px 35px;
+  font-weight: 600;
+  font-size: 18px;
+border-color: white;
+border-style: solid;
+
+}
+
 
 footer {
   text-align: center;
@@ -140,4 +185,6 @@ footer {
   margin-right: -33.3%;
   margin-left: -33.3%;
   color: white;
+  padding: 4% 0;
+
 }
