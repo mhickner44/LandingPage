@@ -6,39 +6,62 @@ body {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
-/**/
+/*shared code*/
 .top,
-.section3Background {
+.section3Background,
+footer {
   margin-right: -33.3%;
   margin-left: -33.3%;
   background-color: #1f2937;
 }
+/*colors and size*/
+.links a,
+.textButton p,
+.textButton button,
+.section2 p,
+#bottomText,
+.buttonContainer button {
+  font-size: 18px;
+}
+
+header,
+footer,
+.buttonContainer button,
+#bottomText,
+#topText,
+.textButton button,
+.textButton h2 {
+  color: #f9faf8;
+}
+
+
+/*display flex*/
+
+.section1,
+header,
+.section2,
+.section4,
+.item {
+  display: flex;
+}
+
 
 header {
-  display: flex;
   justify-content: space-between;
   align-items: center;
-  color: white;
   margin: 0 20%; /*to correct the margin from the body*/
 }
 
 .links a {
   padding: 0 10px;
-  font-size: 18px;
   color: #e5e7eb;
 }
 
-.firstSection {
-  display: flex;
+.section1 {
   align-items: center;
   justify-content: center;
-
   margin: 0 20%;
   padding: 80px 0;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-
-    
 }
 
 .textButton {
@@ -51,53 +74,41 @@ to appear like that*/
 .textButton h2 {
   font-size: 48px;
   font: weight 900px;
-  color: #f9faf8;
   margin: 0;
 }
 .textButton p {
-  font-size: 18px;
   color: #e5e7eb;
   margin: 0;
 }
 
 .textButton button {
   background-color: #3882f6;
-  color: white;
   border-radius: 10px;
   padding: 8px 35px;
   font-weight: 600;
-  font-size: 18px;
   border: none;
-
 }
 
 .imgContainer {
   height: 300px;
   width: 600px;
-flex-shrink: .5;
-
+  flex-shrink: 0.5;
 }
 
-.imgContainer img {/*section 1 image*/
+.imgContainer img {
+  /*section 1 image*/
   max-height: 100%;
   max-width: 100%;
   min-width: 150px;
   min-height: 300px;
- 
 }
 
-
-.imagesContainer {/*section2  image container*/
-  display: flex;
+.section2 {
   justify-content: center;
   align-items: center;
   margin-bottom: 10%;
   flex-wrap: wrap;
-
 }
-
-
-
 
 h3 {
   text-align: center;
@@ -105,34 +116,29 @@ h3 {
   font-weight: 900;
 }
 
-
-
-.imagesContainer p {
+.section2 p {
   color: #1f2937;
-  font-size: 18px;
 }
 
 .item {
-  flex-basis: 250px;
-  display: flex;
+
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
+  flex-basis: 250px;
 }
 
-#seagulls {
+#smallPicture {
   width: 200px;
   height: 200px;
   border: 5px solid #3882f6;
   border-radius: 10px;
-
 }
 
 .section3Background {
   background-color: #e5e7eb;
-  padding-top: 8%;
-  padding-bottom: 8%;
+  padding:8% 0% ;
 }
 
 .section3 {
@@ -156,59 +162,38 @@ h3 {
 }
 
 .section4 {
-  display: flex;
-  justify-content:space-between;
+  justify-content: space-between;
   align-items: center;
-  padding-left: 10%;
-  padding-right: 10%;
+  padding: 5% 10%;
   background-color: #3882f6;
-  padding-top: 5%;
-  padding-bottom: 5%;
-  margin:10% 0;
+  margin: 10% 0;
   border-radius: 10px;
 }
 
-.callToAction{
-  text-align: left
+.callToAction {
+  text-align: left;
 }
 
-
-#topText{
+#topText {
   font-size: 24px;
   font-weight: 600;
-  color: white;
   margin: 0;
-  }
-  
-
-#bottomText{
-
-  color: white;
-  font-size: 18px;
-  margin: 0;
- 
-
 }
 
-.buttonContainer button{
+#bottomText {
+  margin: 0;
+}
+
+.buttonContainer button {
   background-color: #3882f6;
-  color: white;
   border-radius: 10px;
   padding: 8px 35px;
   font-weight: 600;
-  font-size: 18px;
-border-color: white;
-border-style: solid;
-
+  border-color: #f9faf8;
+  border-style: solid;
 }
-
 
 footer {
   text-align: center;
-  background-color: #1f2937;
-  margin-right: -33.3%;
-  margin-left: -33.3%;
-  color: white;
   padding: 4% 0;
-
 }
